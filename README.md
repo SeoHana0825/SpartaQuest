@@ -24,6 +24,23 @@
 ✅ 저장된 값을 삭제는 메서드 구현하기
 
 
+### Step 3. Enum, 제네릭, 람다 & 스트림을 이해한 계산기 만들기
+
+✅ Enum 타입을 활용하여 연산자 타입에 대한 정보를 관리하고 이를 사칙연산 계산기 ArithmeticCalculator 클래스에 활용 -> 진행 중
+
+✅ 실수, 즉 double 타입의 값을 전달 받아도 연산이 수행하도록 **제네릭**을 사용해 만들기
+
+✅ 지금까지는 ArithmeticCalculator, 즉 사칙연산 계산기는 양의 정수(0 포함)를 매개변수로 전달받아 연산
+
+✅ ArithmeticCalculator 클래스의 연산 메서드
+(피연산자를 여러 타입으로 받을 수 있도록 기능을 확장)
+
+✅ 위 요구사항을 만족할 수 있도록 ArithmeticCalculator 클래스를 수정 (제네릭 사용)
+
+✅ 저장된 연산 결과들 중 Scanner로 입력받은 값보다 큰 결과값들을 출력
+
+
+
 ## 프로젝트 구조 설명
 src/
 
@@ -31,8 +48,14 @@ src/
 
 ├── App/
 
-├── Part2/            # Part2 과제 
+├── Part2/        # Part2 과제 
 
 ├── App/          # main 입력 메서드 클래스
 
-└── Calculator/   # 계산, 연산, 저장 메서드 클래스
+├── Calculator/   # 계산, 연산, 저장 메서드 클래스
+
+├── Part3/        # Part3 과제 
+
+├── ArithmeticCalculator/        # 사칙연산 계산기 구현 
+
+└── OperatorType/   # 계산, 연산, 저장 메서드 클래스
