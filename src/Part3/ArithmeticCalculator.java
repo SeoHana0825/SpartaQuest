@@ -4,31 +4,29 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ArithmeticCalculator {
-
-    public class Calculator {
         // 1. 속성 - 변수 선언으로 표현 할 수 있음
 
         // 2. 생성자
 
         // 3. 기능 (메서드)
-        private char operate;
+        private OperatorType operatorType;
         private List<Integer> history = new ArrayList<>();
 
         public int calculate(int num1, int num2) {
 
             int result = 0;
 
-            switch (operate) {
-                case '+':
+            switch (operatorType) {
+                case PLUS:
                     result = num1 + num2;
                     break;
-                case '-':
+                case MINUS:
                     result = num1 - num2;
                     break;
-                case '*':
+                case MULTIPLY:
                     result = num1 * num2;
                     break;
-                case '/':
+                case DIVIDE:
                     if (num2 == 0) {
                         System.out.println("나눗셈 연산에서 분모 (두번째 정수)에 0이 입력될 수 없습니다.");
                     } else {
@@ -49,8 +47,8 @@ public class ArithmeticCalculator {
         }
 
         // 세터
-        public void setOperator(char operator) {
-            this.operate = operator;
+        public void setOperator(OperatorType operator) {
+            this.operatorType = operator;
         }
 
         // 데이터 삭제
@@ -58,4 +56,3 @@ public class ArithmeticCalculator {
             this.history.clear();
         }
     }
-}

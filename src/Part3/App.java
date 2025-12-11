@@ -10,7 +10,7 @@ public class App {
 
     public static void main(String[] args) {
 
-        Calculator calculator = new Calculator();
+        ArithmeticCalculator calculator = new ArithmeticCalculator();
 
         Scanner scanner = new Scanner(System.in);
 
@@ -30,6 +30,8 @@ public class App {
             }
             System.out.println("사칙연산 기호를 입력해주세요 (+,-,*,/): ");
             char operator = scanner.next().charAt(0);
+            OperatorType type = OperatorType.from(opType);
+            calculator.setOperator(type);
 
             try {
                 System.out.println("두 번째 숫자를 입력해주세요: ");
@@ -39,13 +41,11 @@ public class App {
                 scanner.nextLine();
                 continue;
             }
-            calculator.setOperator(operator);
-
             int result = calculator.calculate(num1, num2);
 
             System.out.println("결과: " + result);
 
-            calculator.setOperator(operator);
+            calculator.setOperator(OperatorType.PLUS);
             System.out.println("history: " + history);
 
             System.out.println("더 계산하시겠습니까? (exit 입력)");
