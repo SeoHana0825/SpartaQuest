@@ -16,7 +16,7 @@ public class App {
 
             if (num1 < 0) {
                 System.out.println("0을 포함한 양수만 입력가능합니다.");
-                return;
+                continue;
             }
 
             // 두번째 숫자 입력
@@ -25,7 +25,7 @@ public class App {
 
             if (num2 < 0) {
                 System.out.println("0을 포함한 양수만 입력가능합니다.");
-                return;
+                continue;
             }
 
             // 사칙연산 기호 입력받기
@@ -56,12 +56,13 @@ public class App {
 
             // exit 입력 시 종료, 이외 다른 문자 시 계속 진행
             System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)");
-            String exit = sc.next();
+           String exit = sc.next();
 
             if (exit.equals("exit")) {
                 System.out.println("계산기를 종료합니다.");
-                return;
+                sc.close();
             }
+
         }
     }
 }
