@@ -22,7 +22,7 @@ public class App {
             } catch (InputMismatchException e) {
                 System.out.println("숫자를 입력해주세요.");
                 scanner.nextLine();
-                continue;
+                return;
             }
 
             System.out.println("사칙연산 기호를 입력해주세요 (+,-,*,/): ");
@@ -39,21 +39,18 @@ public class App {
             } catch (InputMismatchException e) {
                 System.out.println("숫자를 입력해주세요.");
                 scanner.nextLine();
-                continue;
+                return;
             }
             int result = 0;
 
             // if: 간단하고 적은 수의 가정문일 때 사용하기 용이
             // switch: if에 비해 간단한 수식으로 많은 가정이 있을 때 사용하기 용이해서 선택
             switch (op) {
-                case '+':
-                    result = num1 + num2;
+                case '+':  result = num1 + num2;
                     break;
-                case '-':
-                    result = num1 - num2;
+                case '-':  result = num1 - num2;
                     break;
-                case '*':
-                    result = num1 * num2;
+                case '*':  result = num1 * num2;
                     break;
                 case '/': {
                     if (num2 == 0) {
