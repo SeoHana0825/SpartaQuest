@@ -11,24 +11,13 @@ public class Calculator {
     char op;
 
     // 결과값 저장하기
-    private List<Integer> history = new ArrayList<>();
+    private final List<Integer> history = new ArrayList<>();
 
     // 생성자 : 필드에서 입력받아 수행 (자동 실행)
     public Calculator() {
     }
 
-    // 메서드 (기능) 1. 사칙연산 계산 결과 수정 setter
-    public void setNum1(int num1){
-        this.num1 = num1;
-    }
-    public void setNum2(int num2){
-        this.num2 = num2;
-    }
-    public void setOp(char op){
-        this.op = op;
-    }
-
-    // 메서드 (기능) 2. 사칙연산 계산
+    // 메서드 (기능) 사칙연산 계산
     public int calculate() {
 
         int result;
@@ -42,7 +31,6 @@ public class Calculator {
         } else if (op == '/') {
             if (num2 == 0) {
                 System.out.println("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다.");
-                return 0;
             }
             result = num1 / num2;
         } else {
@@ -58,11 +46,6 @@ public class Calculator {
     // getter 로 저장값 호출부
     public List<Integer> getHistory() {
         return history;
-    }
-
-    // setter 로 저장값 수정 호출부 (삭제를 위해 필요)
-    public void setHistory(List<Integer> history) {
-        this.history = history;
     }
 
     // 가장 먼저 저장된 결과 삭제 메서드
