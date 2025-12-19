@@ -1,10 +1,36 @@
-# CH2 계산기 과제
+# CH 2 계산기 과제
 자바의 객체 지향 개념을 적용해 Java 문법 실습을 익혀보자
 
 ---
 ## 프로젝트 소개
 - 2개의 양수를 입력받고, 사칙연산 기호에 따라 연산을 수행하는 기본적인 계산기툴을 만들어보자
 - java 문법이 익숙해지도록 다시 한번 더 실습을 해보자 ( NEW !! )
+
+---
+## 프로젝트 구조 설명
+
+    📁src/
+       └── 📁 Part1/                            # Part1 과제
+                └── App/ 
+           📁 Part2/                             # Part2 과제 
+                └── App/
+                └── Calculator/                  # 계산, 연산, 저장 메서드 클래스
+           📁 Part3/                             # Part3 과제 
+                └── App/
+                └── ArithmeticCalculator/        # 사칙연산 계산기 구현
+                └── OperatorType/                # 계산, 연산, 저장 메서드 클래스
+
+          ----------------- 2차 추가 -----------------
+
+          📁 ReStep1/                             # Step1 재구현
+                └── App/
+          📁 ReStep2/                             # Step2 재구현 
+                └── App/
+                └── Calculator/
+          📁 ReStep3/                             # Step3 재구현
+                └── App/
+                └── ArithmeticCalculator/        
+                └── OperatorType/       
 
 ---
 ## 프로젝트 목표
@@ -50,32 +76,4 @@
 * ArithmeticCalculator (사칙연산 계산기): 양의 정수를 매개변수로 받아 연산
 ---
 
-## 프로젝트 구조 설명
-
-📁src/
-
-    📁 Part1/                            # Part1 과제
-        └── App/ 
-
-    📁 Part2/                             # Part2 과제 
-        └── App/
-        └── Calculator/                  # 계산, 연산, 저장 메서드 클래스
-
-    📁 Part3/                             # Part3 과제 
-        └── App/
-        └── ArithmeticCalculator/        # 사칙연산 계산기 구현
-        └── OperatorType/                # 계산, 연산, 저장 메서드 클래스
-
-    ------------ 추가 NEW ------------
-
-    📁 ReStep1/                             # Step1 재구현
-        └── App/
-
-    📁 ReStep2/                             # Step2 재구현 
-        └── App/
-        └── Calculator/                 
-
-    📁 ReStep3/                             # Step3 재구현
-        └── App/
-        └── ArithmeticCalculator/        
-        └── OperatorType/                
+         
