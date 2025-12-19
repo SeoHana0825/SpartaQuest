@@ -5,11 +5,11 @@ import java.util.*;
 public class App {
 
     public static void main(String[] args) {
-        Calculator calculator = new Calculator();
 
+        Calculator calculator = new Calculator();
         Scanner scanner = new Scanner(System.in);
 
-        List<Integer> history = calculator.getHistory();
+    //    List<Integer> history = calculator.getHistory();
 
         while (true) {
 
@@ -34,14 +34,14 @@ public class App {
                 scanner.nextLine();
                 continue;
             }
-            calculator.setOperator(operator);
+
+            // calculator.setOperator(operator);
 
             int result = calculator.calculate(num1, num2);
-
             System.out.println("결과: " + result);
 
-            calculator.setOperator(operator);
-            System.out.println("history: " + history);
+            // calculator.setOperator(operator);
+            // System.out.println("history: " + history);
 
             System.out.println("더 계산하시겠습니까? (exit 입력)");
             String answer = scanner.next();

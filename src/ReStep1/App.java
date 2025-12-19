@@ -45,12 +45,13 @@ public class App {
             else if (op == '/') {
                 if (num2 == 0) {
                     System.out.println("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다.");
-                    return;
+                    continue;
+                    // continue 를 사용해 완전 종료되지 않고 처음으로 돌아가기
                 }
                 result = num1 / num2;
             } else {
                 System.out.println("잘못된 연산자입니다."); // 연산자가 아닌 다른 문자가 들어갔을 때 예외 상황
-                return;
+                continue;
             }
             System.out.println("결과: " + result);
 

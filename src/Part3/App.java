@@ -30,8 +30,8 @@ public class App {
             }
             System.out.println("사칙연산 기호를 입력해주세요 (+,-,*,/): ");
             char operator = scanner.next().charAt(0);
-            OperatorType type = OperatorType.from(opType);
-            calculator.setOperator(type);
+//            OperatorType type = OperatorType.from(opType);
+//            calculator.setOperator(type);
 
             try {
                 System.out.println("두 번째 숫자를 입력해주세요: ");
