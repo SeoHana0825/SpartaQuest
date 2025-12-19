@@ -9,7 +9,6 @@
 ---
 ## 프로젝트 구조 설명
 
-<<<<<<< HEAD
     📁src/
        └── 📁 Part1/                            # Part1 과제
                 └── App/ 
@@ -32,35 +31,6 @@
                 └── App/
                 └── ArithmeticCalculator/        
                 └── OperatorType/       
-=======
-📁src/
-
-    📁 Part1/                            # Part1 과제
-        └── App/ 
-
-    📁 Part2/                             # Part2 과제 
-        └── App/
-        └── Calculator/                  # 계산, 연산, 저장 메서드 클래스
-
-    📁 Part3/                             # Part3 과제 
-        └── App/
-        └── ArithmeticCalculator/        # 사칙연산 계산기 구현
-        └── OperatorType/                # 계산, 연산, 저장 메서드 클래스
-
-    ------------ 추가 NEW ------------
-
-    📁 ReStep1/                             # Step1 재구현
-        └── App/
-
-    📁 ReStep2/                             # Step2 재구현 
-        └── App/
-        └── Calculator/                 
-
-    📁 ReStep3/                             # Step3 재구현
-        └── App/
-        └── ArithmeticCalculator/        
-        └── OperatorType/                
->>>>>>> 44b97fe429944f359702940efb942ff3d839c051
 
 ---
 ## 프로젝트 목표
