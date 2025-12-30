@@ -29,8 +29,12 @@ public class App {
             char op = sc.next().charAt(0);
 
             // 계산하기
-            int result = calculator.calculate();
+            Integer result = calculator.calculate(num1, num2, op);
             System.out.println("결과: " + result);
+
+            // setter로 사칙연산 수정하기
+            //calculator.setOp(op);
+            //char op2 = calculator.getOp();
 
             // 저장값 (history) 불러오기
             System.out.println("저장값: " + calculator.getHistory());
@@ -39,7 +43,7 @@ public class App {
             System.out.println("가장 먼저 저장된 값을 삭제하시겠습니까? (yes)");
             String answer = sc.next();
                if ("yes".equals(answer)) {
-                  Integer removed = calculator.removeFirstHistory();
+                  calculator.removeHistory();
                   System.out.println("현재 저장값: " + calculator.getHistory());
                }
 
@@ -47,11 +51,11 @@ public class App {
             System.out.println("종료를 원하시면 'exit' 을 입력 해주세요)");
             String exit = sc.next();
 
-
             if (exit.equals("exit")) {
                 System.out.println("계산기를 종료합니다.");
+                sc.close();
                 break;
             }
-        } sc.close();
+        }
     }
 }
